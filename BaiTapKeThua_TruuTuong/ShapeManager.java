@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class ShapeManager {
     private Shape[] DanhSachHinh;
     private int n;
+    public Scanner sc;
     public ShapeManager(){
-
     }
     public ShapeManager(int n) {
         DanhSachHinh = new Shape[n];
     }
     public void Nhap(){
         char type;
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
         Shape shape = null;
         for(int i=0;i<n;i++){
             System.out.println("Nhap ki tu 'C: Circle' 'T: Triangel' 'R: Rectangle' 'S: Square'");
